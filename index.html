@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thabo Nkadimeng Malama — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="Home - Thabo Malama">
+        <div class="logo-mark" aria-hidden="true"><span>TN</span></div>
+        <div class="logo-text">
+          <strong>Thabo N. Malama</strong>
+          <small>InfoSec & Computer Forensics</small>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="nav" aria-label="Primary navigation">
+        <button id="nav-toggle" aria-controls="nav-links" aria-expanded="false" class="nav-toggle">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#case-studies">Portfolio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certs">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <!-- Left column: intro + meta -->
+        <div class="hero-left">
+          <!-- New intro row with image placeholder -->
+          <div class="intro-row glass-intro reveal">
+            <div class="intro-avatar" aria-hidden="true">
+              <img src="assets/profile.jpg" alt="Thabo Nkadimeng Malama" style="width:100%;height:100%;object-fit:cover;border-radius:12px">
+                <defs>
+                  <linearGradient id="ig" x1="0" x2="1">
+                    <stop offset="0" stop-color="#5fd7e0"/>
+                    <stop offset="1" stop-color="#7b6bff"/>
+                  </linearGradient>
+                </defs>
+                <rect width="160" height="160" rx="16" fill="url(#ig)"></rect>
+                <g transform="translate(18,26)" fill="#fff" opacity="0.95">
+                  <circle cx="44" cy="32" r="24"></circle>
+                  <rect x="0" y="74" width="88" height="38" rx="8"></rect>
+                </g>
+                <text x="80" y="152" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.85)"></text>
+              </svg>
+            </div>
+
+            <div class="intro-text">
+              <h1>Hi — I'm Thabo Nkadimeng Malama</h1>
+              <p class="intro-p">
+                I'm an Information Security & Computer Forensics student (BSc, ICU — 2021–2025) who turns technical concepts into practical, measurable outcomes.
+                I lead awareness programs that reached 200+ attendees, co-organised hands-on workshops, and completed an internship with the Zambian Cyber Security Initiative Foundation.
+                Motivated and detail-oriented Information Security and Cloud Computing enthusiast with hands-on experience in AWS, cybersecurity, and digital forensics. Skilled in building secure, scalable infrastructures and deploying cloud-native solutions. Experienced in team collaboration, customer support, system and account recovery, and real-world projects, with a strong passion for leveraging technology to solve problems and strengthen digital security
+              </p>
+              <div class="intro-ctas">
+                <a class="btn btn-primary" href="#case-studies">See my case studies</a>
+                <a class="btn btn-ghost" href="#contact">Get in touch</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- original hero-left content (meta + CTAs) moved down to remain useful -->
+          <div class="meta-block glass reveal">
+            <ul class="meta-list">
+              <li><strong>Location:</strong> Salama Park, Lusaka, Zambia</li>
+              <li><strong>Phone:</strong> <a href="tel:+260970278471">+260 97 027 8471</a>, <a href="tel:+260969925893">+260 96 992 5893</a></li>
+              <li><strong>Email:</strong> <a href="mailto:nkadimengthabo05@gmail.com">nkadimengthabo05@gmail.com</a></li>
+              <li><strong>Degree:</strong> BSc Information Security & Computer Forensics (ICU, 2021–2025)</li>
+            </ul>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#case-studies">View Case Studies</a>
+              <a class="btn btn-ghost" href="#contact">Contact</a>
+              <button onclick="window.print()" class="btn btn-outline">Print</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: profile card -->
+        <div class="hero-right">
+          <div class="profile-card glass-3d reveal">
+            <div class="profile-top">
+              <div class="avatar" aria-hidden="true">
+                <!-- simple avatar placeholder -->
+                <svg viewBox="0 0 120 120" class="avatar-svg" role="img" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#5fd7e0"/><stop offset="1" stop-color="#7b6bff"/></linearGradient>
+                  </defs>
+                  <circle cx="60" cy="36" r="28" fill="url(#g1)"></circle>
+                </svg>
+              </div>
+              <div class="profile-summary">
+                <h2>Information Security & Computer Forensics</h2>
+                <p class="muted">Hands-on experience: awareness programs, workshops, CTFs, and an internship with ZCSIF.</p>
+                <div class="badges">
+                  <span class="badge">Google Cybersecurity</span>
+                  <span class="badge">EC-Council DFE / NDE</span>
+                    <span class="badge">AWS-Solutions</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div><strong>200+</strong><small>Workshop attendees</small></div>
+              <div><strong>CTF</strong><small>Competitive participant</small></div>
+              <div><strong>Internship</strong><small>ZCSIF (Jul–Oct 2024)</small></div>
+              <div><strong>Bootcamp</strong><small>CloudSec-Network (Jun–Aug 2025)</small></div>
+            </div>
+
+            <div class="skill-sparkline">
+              <div class="spark-label">Core strengths</div>
+              <div class="spark-bars">
+                <div class="spark"><span style="width:95%"></span><small>Windows / Linux</small></div>
+                <div class="spark"><span style="width:92%"></span><small>Web (HTML/CSS/Vue)</small></div>
+                <div class="spark"><span style="width:80%"></span><small>Java & Backend</small></div>
+                <div class="spark"><span style="width:78%"></span><small>Node.js</small></div>
+                <div class="spark"><span style="width:75%"></span><small>Cloud & Infrastructure</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-links glass reveal">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#experience">Experience & Projects</a></li>
+              <li><a href="#certs">Certifications</a></li>
+              <li><a href="#references">References</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rest of the sections remain unchanged (skills, portfolio, education, etc.) -->
+    <!-- Skills -->
+    <section id="skills" class="section container reveal">
+      <h2>Skills & Tools</h2>
+      <p class="lead">Technical skills, tools, and practices I use to secure systems and investigate incidents.</p>
+
+      <div class="skills-wrap">
+        <div class="skill-col">
+          <h3>Technical</h3>
+          <ul class="skill-list">
+            <li>Windows & Linux administration, Kali tooling, vulnerability scanning</li>
+            <li>Web fundamentals: HTML5, CSS3, Java, Vue.js and Node.js</li>
+            <li>Network fundamentals & defensive practices</li>
+            <li>Cloud computing concepts & AWS services</li>
+          </ul>
+        </div>
+
+        <div class="skill-col">
+          <h3>Soft skills</h3>
+          <ul class="skill-list">
+            <li>Workshop facilitation & Customer support</li>
+            <li>Incident response coordination and teamwork</li>
+            <li>Clear technical writing & documentation</li>
+            <li>Adaptability and continuous learning</li>
+          </ul>
+        </div>
+
+        <div class="skill-col">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li>Kali Linux, Wireshark, Nmap, Burp Suite (familiar)</li>
+            <li>Vue.js, Node.js, Git, MySQL / MongoDB (basic)</li>
+            <li>Google Workspace & collaboration tools</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Case Studies -->
+    <section id="case-studies" class="section container reveal">
+      <h2>Portfolio & Case Studies</h2>
+      <p class="lead">Selected projects and practical work demonstrating outcomes, approach, and impact.</p>
+
+      <div class="projects-grid">
+        <!-- Project cards (same as previous) -->
+        <article class="project-card tilt" tabindex="0" data-project="1" data-img="assets/project1.jpg">
+          <div class="project-media" style="background-image: url('assets/project1.jpg');" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>“DON’T CLICK” — Phishing Awareness Campaign</h3>
+            <p class="muted">Role: Disciplinary Officer / facilitator — Team lead for planning & operations.</p>
+            <ul class="project-bullets">
+              <li>Designed and delivered interactive sessions across multiple schools (200+ students & teachers).</li>
+              <li>Ran simulated phishing exercises and live quizzes to measure comprehension and behavior change.</li>
+              <li>Created modular lesson material so future teams could reuse and scale the program.</li>
+            </ul>
+            <div class="project-meta">
+              <div class="tech">Workshop • Awareness • Social Engineering</div>
+              <button class="btn btn-sm view-case" data-id="1">View case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" tabindex="0" data-project="2" data-img="assets/project2.jpg">
+          <div class="project-media" style="background-image: url('assets/project2.jpg');" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>ICU Cybersecurity Workshop Series</h3>
+            <p class="muted">Co-organizer & lab facilitator — Hands-on network defense series.</p>
+            <ul class="project-bullets">
+              <li>Planned three-session curriculum focused on network defense fundamentals and vulnerability remediation.</li>
+              <li>Delivered live Kali labs and mentoring—30+ participants gained practical scanning and remediation experience.</li>
+              <li>Maintained a measured lab environment and debrief notes for reproducible exercises.</li>
+            </ul>
+            <div class="project-meta">
+              <div class="tech">Kali Linux • Network Defense • Labs</div>
+              <button class="btn btn-sm view-case" data-id="2">View case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" tabindex="0" data-project="3" data-img="assets/project3.jpg">
+          <div class="project-media" style="background-image: url('assets/project3.jpg');" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Internship — Zambian Cyber Security Initiative Foundation</h3>
+            <p class="muted">Security intern — program support & small engagements (Jul–Oct 2024).</p>
+            <ul class="project-bullets">
+              <li>Supported operations and research tasks, aided in event coordination, and assisted in small security engagements.</li>
+              <li>Contributed to internal tooling and event materials; shadowed analysts on triage and documentation.</li>
+            </ul>
+            <div class="project-meta">
+              <div class="tech">Internship • Security Operations</div>
+              <button class="btn btn-sm view-case" data-id="3">View case</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container reveal">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>2021 — 2025</time>
+          <h3>BSc Information Security & Computer Forensics</h3>
+          <p>Information and Communications University (ICU)</p>
+        </div>
+        <div class="timeline-item">
+          <time>2015 — 2017</time>
+          <h3>Senior Secondary</h3>
+          <p>Pestalozzi Education Centre</p>
+        </div>
+        <div class="timeline-item">
+          <time>2006 — 2014</time>
+          <h3>Primary & Junior Secondary</h3>
+          <p>Nkumbu Primary School • Likasa Boys Secondary School</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Experience (condensed) -->
+    <section id="certs" class="section container reveal">
+      <div class="certs-grid">
+        <div class="cert-block glass">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Google Cybersecurity Professional Certificate — Jan 2024</li>
+            <li>EC-Council Digital Forensics Essentials (DFE) — Jan 2024</li>
+            <li>EC-Council Network Defense Essentials (NDE) — Jan 2024</li>
+            <li>BSc (expected) — Information & Communications University — Dec 2025</li>
+            <li>CloudSec-Network — AWS Bootcamp 2025 — Jun-Aug 2025</li>
+          </ul>
+        </div>
+
+        <div class="cert-block glass">
+          <h3>Experience</h3>
+          <ul>
+            <li>Cybersecurity Intern — Zambian Cyber Security Initiative Foundation (Jul — Oct 2024)</li>
+            <li>Organizer & Disciplinary Officer — ICU Cyber Security Association</li>
+            <li>Presenter & facilitator — multiple workshops and awareness programs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- References & Contact -->
+    <section id="references" class="section container reveal">
+      <h2>References</h2>
+      <div class="refs-grid">
+        <div class="ref-card glass">
+          <h4>Dr. Sycorax T. Ndhlovu — Registrar (ICU)</h4>
+          <p>Phone: 0977 450151</p>
+        </div>
+        <div class="ref-card glass">
+          <h4>Mr. Samuel Simuntala — Lecturer (ICU)</h4>
+          <p>Phone: 0974 045315</p>
+        </div>
+        <div class="ref-card glass">
+          <h4>Mr. Mike N’gandu — Cyber Security Analyst (Digital Safe)</h4>
+          <p>Phone: 0973 230564</p>
+        </div>
+        <div class="ref-card glass">
+          <h4>Mr. Micheal Mumba — Head of Programs (ZCSIF)</h4>
+          <p>Phone: 0979 517239</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card glass">
+          <h3>Let's talk</h3>
+          <p>Open to internships, entry-level roles, and collaboration on security projects.</p>
+          <ul class="contact-meta">
+            <li>Email: <a href="mailto:nkadimengthabo05@gmail.com">nkadimengthabo05@gmail.com</a></li>
+            <li>Phone: <a href="tel:+260970278471">+260 97 027 8471</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Thabo Nkadimeng Malama — Information Security & Computer Forensics</p>
+    </div>
+  </footer>
+
+  <!-- Modal for case study -->
+  <div id="caseModal" class="modal" aria-hidden="true" role="dialog" aria-label="Case study">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <div class="modal-content">
+        <div class="modal-media" id="modal-img" style="background-image:none"></div>
+        <div class="modal-body">
+          <h3 id="modal-title">Case Study Title</h3>
+          <p id="modal-sub" class="muted">Short subtitle</p>
+          <div id="modal-desc"></div>
+          <ul id="modal-bullets"></ul>
+          <div class="modal-meta" id="modal-meta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
